@@ -1,0 +1,38 @@
+# Exported from Render on 2025-02-03T11:34:38Z
+services:
+- type: web
+  name: repo
+  runtime: docker
+  repo: https://github.com/Lokixaromal/repo
+  plan: free
+  envVars:
+  - key: WORK_TYPE
+    sync: true
+  - key: BOT_INFO
+    sync: false
+  - key: STATUS_VIEW
+    sync: true
+  - key: STICKER_PACKNAME
+    sync: false
+  - key: CONTEXTINFO
+    sync: false
+  - key: AUDIO_DATA
+    sync: false
+  - key: SUDO
+    sync: false
+  - key: PORT
+    sync: false
+  - key: DATABASE_URL
+    sync: false
+  - key: SESSION_ID
+    sync: false
+  - key: RENDER_APP_NAME
+    sync: false
+  - key: RENDER_API
+    sync: false
+  region: frankfurt
+  dockerContext: .
+  dockerfilePath: ./Dockerfile
+  previews:
+    generation: manual
+version: "1"
