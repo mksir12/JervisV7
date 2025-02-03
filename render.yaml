@@ -7,11 +7,11 @@ services:
   plan: free
   envVars:
   - key: WORK_TYPE
-    sync: true
+    sync: false
   - key: BOT_INFO
     sync: false
   - key: STATUS_VIEW
-    sync: true
+    sync: false
   - key: STICKER_PACKNAME
     sync: false
   - key: CONTEXTINFO
